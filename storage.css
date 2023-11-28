@@ -1,0 +1,515 @@
+body{
+    background-color: rgb(32, 32, 32);
+    font-family: Arial;
+}
+
+
+/*Campo do cabeçalho*/
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: flex-start;
+    height: 10%;
+    width: 99%;
+    border-radius: 2%;
+    background-color: rgb(26, 26, 26);
+    border-top: 0.1px solid rgb(24, 75, 67);
+    border-bottom: 0.1px solid rgb(24, 75, 67);
+}
+
+/*zona dos botões de navegação*/
+.navegate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+    width: auto;
+    gap: 10px;
+    padding-left: 50px;
+}
+
+/*posição do titulo da pagina*/
+.cranio{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+/* Botão de Novo Pedido */
+.add1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: auto;
+    border: none;
+    background-color: rgb(87, 87, 87);
+    border-radius: 5px;
+}
+.add1:hover{
+    width: 70px;
+    background-color: rgb(94, 255, 0);
+}
+
+
+.add2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: auto;
+    border: none;
+    background-color: rgb(87, 87, 87);
+    border-radius: 5px;
+}
+.add2:hover{
+    background-color: rgb(0, 225, 255);
+    width: 70px;
+}
+
+/*estrutura de linhas dentro do body*/
+.interno{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    align-content: center;    
+    padding-top: 1%;
+    width: 99%;
+    height: 100%;
+    min-height: 500px;
+    background-color: rgb(57, 57, 57);
+}
+
+/*Parte estrutural canto esquerdo do site*/
+.lt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    width: 36%;
+    height: 100%;
+    min-height: 450px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    border-radius: 2%;
+    border-top: 1px solid rgb(0, 186, 155);
+    border-bottom: 1px solid rgb(0, 186, 155);
+    background-color: black;
+    color: whitesmoke;
+}
+
+
+.superiorLT{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.filtro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: flex-start;
+    width: 100%;
+}
+
+
+.listagem{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: center;
+    height: 100%;
+    min-height: 50px;
+    max-height: 350px;
+    max-width: 450px;
+    width: 100%;
+    overflow-y: scroll;
+    background-color: rgb(26, 26, 26);
+    border-left: 1px solid rgb(0, 186, 155);
+    border-right: 1px solid rgb(0, 186, 155);   
+}
+
+.tb{
+    width: 100%;
+}
+
+.zonaRt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    width: 50%;
+    height: 100%;
+    min-height: 450px;
+    border-radius: 1%;
+    border-top: 1px solid rgb(0, 186, 155);
+    border-bottom: 1px solid rgb(0, 186, 155);
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+}
+
+
+.cadastrolocal{
+    width: 90%;
+    height: 50%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(26, 26, 26);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    border-left: 1px solid rgb(0, 186, 155);
+    border-right: 1px solid rgb(0, 186, 155);
+    border-radius: 15px;
+}
+
+
+.inputlocal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    gap: 10px;
+    
+}
+
+/*Parte estrutural canto direito do site*/
+.rt{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start;
+    width: 90%;
+    height: 80%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(26, 26, 26);
+    border-left: 1px solid rgb(0, 186, 155);
+    border-right: 1px solid rgb(0, 186, 155);
+    color: whitesmoke;
+    border-radius: 15px;
+}
+
+
+.infos{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.linha{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 30px;
+    padding-bottom: 20px;
+}
+
+
+.inputzone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 65%;
+    border-bottom: 1px solid white;
+
+}
+
+
+.local{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    width: 65%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid white;
+}
+
+/*fonte de add item*/
+.ft{
+    font-size: 21px;
+    font-weight: 700;
+    width: 30%;
+}
+
+
+/*fonte de add item*/
+.lc{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+/*input Quantidade*/
+.qt_it{
+    width: 30%;
+}
+
+/*input nome do item*/
+.nm_it{
+    width: 70%;
+}
+
+
+.interagir{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    height: 50%;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+
+/* Botão de Novo Pedido */
+.btt{
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+}
+.btt:hover{
+    background-color: firebrick;
+    color: whitesmoke;
+}
+.butao{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.bttS, .bttC{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 115px;
+    height: 115px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+}
+
+
+/*Parte estrutural canto direito do site para edição de itens*/
+.edit{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    width: 90%;
+    height: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    color: whitesmoke;
+    background-color: rgb(26, 26, 26);
+    border-left: 1px solid rgb(0, 186, 155);
+    border-right: 1px solid rgb(0, 186, 155);
+    border-radius: 15px;
+}
+
+
+.editzone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    width: 65%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid white;
+}
+
+.editft{
+    font-size: 21px;
+    font-weight: 700;
+    width: 50%;
+}
+
+
+
+.edit.ativo, .cadastrolocal.ativo, .rt.ativo{
+    display: flex;
+}
+
+
+
+
+.titulo{
+    color: whitesmoke;
+}
+
+
+
+
+.btts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-right: 60px;
+}
+
+
+.navega1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70px;
+    height: auto;
+    border: none;
+    background-color: rgb(48, 48, 48);
+    border-radius: 5px;
+}
+
+.navega2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start;
+    width: 70px;
+    height: auto;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.navega1:hover{
+    background-color: rgb(221, 255, 0);
+    width: 70px;
+    height: auto;
+}
+
+.navega2:hover{
+    background-color: rgb(232, 232, 232);
+    width: 70px;
+    height: auto;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.editarIt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 35%;
+    height: 35%;
+    border-radius: 5px;
+    font-weight: 700;
+    border: none;
+}
+
+.editarIt:hover{
+    background-color: rgb(255, 0, 0)
+}
+
+th{
+    padding-left: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.infolist1{
+    width: 30%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.infolist2{
+    width: auto;
+    padding-right: 30px;
+}
+
+.bttactionE{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 115px;
+    height: 115px;
+    border-radius: 5px;
+    font-weight: 700;
+    border: none;
+}
+.bttactionS{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 115px;
+    height: 115px;
+    border-radius: 5px;
+    font-weight: 700;
+    border: none;
+}
+
+.bttactionE:hover, .bttC:hover{
+    background-color: crimson;
+    color: whitesmoke;
+}
+.bttactionS:hover, .bttS:hover{
+    background-color: chartreuse;
+    font-weight: 700;
+}
+
+
+.imgaction{
+    width: 85%;
+    height: auto;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
